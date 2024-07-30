@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv('/Users/garimabhayana/Desktop/projects/Budget Manager/Daily Household Transactions.csv')
+df = pd.read_csv('Transactions.csv')
 categories = [
     'Transportation', 'Food', 'Subscription', 'Festivals', 'Other', 'Small Cap fund 2',
     'Small cap fund 1', 'Family', 'Equity Mutual Fund E', 'Apparel', 'Public Provident Fund',
@@ -68,10 +68,10 @@ st.markdown("""
     <style>
     .main { background-color: #9AAEEB; }
     .stButton>button { background-color: #608CEB; color: white; }
-    .stTextInput>div>input { background-color: #212224; }
-    .stNumberInput>div>input { background-color: #212224; }
-    .stSelectbox>div>div>div { background-color: #212224; }
-    .stDateInput>div>input { background-color: #212224; }
+    .stTextInput>div>input { background-color: #262730; }
+    .stNumberInput>div>input { background-color: #262730; }
+    .stSelectbox>div>div>div { background-color: #262730; }
+    .stDateInput>div>input { background-color: #262730; }
     </style>
 """, unsafe_allow_html=True)
 
@@ -81,7 +81,7 @@ def categorize_transaction(transaction):
     # Preprocess transaction data
     transaction = pd.DataFrame(transaction, index=[0])
     # Load the original dataset
-    df = pd.read_csv('/Users/garimabhayana/Desktop/projects/Budget Manager/Daily Household Transactions.csv')
+    df = pd.read_csv('Transactions.csv')
     # Group by 'Category' and calculate average expenses
     category_avg_expenses = df.groupby('Category')['Amount'].mean().reset_index()
     # Get the average expense for the category
@@ -157,7 +157,7 @@ def main():
         # Convert the transaction dictionary to a pandas dataframe
         transaction_df = pd.DataFrame([transaction])
         # Append the transaction to the daily household transactions CSV file
-        transaction_df.to_csv('/Users/garimabhayana/Desktop/projects/Budget Manager/Daily Household Transactions.csv', mode='a', header=False, index=False)
+        transaction_df.to_csv('Transactions.csv', mode='a', header=False, index=False)
         st.write("Record updated")  
      # Analyse button
     if st.button("Analyse"):
