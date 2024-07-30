@@ -1,1 +1,8 @@
-
+streamlit
+pandas
+pickle
+numpy
+tensorflow.keras.models
+scikit-learn
+matplotlib
+seaborn
