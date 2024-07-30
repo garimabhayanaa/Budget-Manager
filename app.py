@@ -31,7 +31,7 @@ important_categories = [
 ]
 
 # Load model
-expense_predictor_model = pickle.load(open('/Users/garimabhayana/Desktop/projects/Budget Manager/expense_predictor_model.pkl', 'rb'))
+expense_predictor_model = pickle.load(open('expense_predictor_model.pkl', 'rb'))
 
 # Preprocess dataset
 def preprocess_data(df):
