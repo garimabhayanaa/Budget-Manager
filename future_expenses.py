@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pickle
 
 # Load the dataset
-df = pd.read_csv('Daily Household Transactions.csv')
+df = pd.read_csv('Transactions.csv')
 
 # Convert 'Date' column to datetime format
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce', format='mixed')
