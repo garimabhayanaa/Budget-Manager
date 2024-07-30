@@ -2,7 +2,7 @@ streamlit
 pandas
 pickle
 numpy
-tensorflow.keras.models
+tensorflow
 scikit-learn
 matplotlib
 seaborn
