@@ -33,7 +33,7 @@ By comparing user-inputted expenses with similar transactions in the same catego
 ### Steps  
 1. **Clone the Repository:**  
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/garimabhayanaa/Budget-Manager)
    cd Budget-Manager
 2. **Create a Virtual Environment (Optional, Recommended):**
    ```bash
